@@ -84,11 +84,11 @@ function AnimalsLastYearChart() {
   };
 
   return (
-    <div className="mr-[23px]">
+    <div className="w-[calc(45%-75px)]">
       <h2 className="text-[#1B98E0] font-inter text-[20px] font-semibold mb-[5px]">
         ANIMAIS ATENDIDOS NO ANO ANTERIOR
       </h2>
-      <div className="w-[515px] h-[392px] p-[10px] border border-[#ABABAB]">
+      <div className="w-[100%] h-[392px] p-[10px] border border-[#ABABAB]">
         <Bar ref={chartRef} options={options} data={data}/>
       </div>
     </div>

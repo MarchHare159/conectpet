@@ -10,7 +10,7 @@ function Panel() {
     <>
       <PageTitle title="Painel" subTitle="Visão Geral & Estatísticas" />
       <div className="p-8 space-y-8">
-        <div className="flex items-end">
+        <div className="flex items-end gap-[20px]">
           <AnimalsLastYearChart/>
           <AttendanceLast7DaysChart/>
 

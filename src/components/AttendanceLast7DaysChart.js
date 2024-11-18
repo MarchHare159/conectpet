@@ -104,13 +104,11 @@ function AttendanceLast7DaysChart() {
   };
 
   return (
-    <div className="mr-[16px]">
-      <div className="">
+    <div className="w-[calc(45%-75px)]">
         <h2 className="text-[#1B98E0] font-inter text-[20px] font-semibold mb-[5px]">ANIMAIS ATENDIDOS E AUSÊNCIAS - ÚLTIMOS 7 DIAS</h2>
-        <div className="w-[515px] h-[392px] p-[10px] border border-[#ABABAB]">
+        <div className="w-[100%] h-[392px] p-[10px] border border-[#ABABAB]">
           <Line options={options} data={data}/>
         </div>
-      </div>
     </div>
   );
 }

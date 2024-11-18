@@ -21,7 +21,7 @@ ChartJS.register(
 
 const options = {
   responsive: true,
-  maintainAspectRatio: false,
+  maintainAspectRatio: false, 
   plugins: {
     legend: {
       display: false, // Hide legend
@@ -98,10 +98,10 @@ function ConsultationsLast12MonthsChart() {
   };
 
   return (
-    <div>
+    <div className="w-[calc(90%+40px)]">
       <h2 className="text-[#1B98E0] font-inter text-[20px] font-semibold mb-4">CONSULTAS FINALIZADAS AUSÊNCIAS E CANCELAMENTOS</h2>
       <p className="text-[#A2A2A2] font-inter text-[12px] font-semibold leading-normal">Estatísticas sobre consultas nos últimos 12 meses</p>
-      <div className="w-[90%] h-[392px] p-[10px] border border-[#ABABAB]">
+      <div className="w-[100%] h-[392px] p-[10px] border border-[#ABABAB]">
         <Bar options={options} data={data}/>
       </div>
     </div>
